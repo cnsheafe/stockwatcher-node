@@ -5,6 +5,10 @@
   "author": "<cnsheafe@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "nodemon --exec ts-node -- ./server.ts",
+    "lint": "tslint --fix './src/**/*'"
+  },
   "devDependencies": {
     "nodemon": "^1.18.4",
     "ts-node": "^7.0.1"
