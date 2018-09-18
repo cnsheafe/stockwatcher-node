@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "esnext"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": false,
+  },
+  "include": ["src/**/*", "server.ts"]
+}
