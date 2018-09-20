@@ -10,4 +10,8 @@ export default abstract class Db {
   protected pool: Pool
 
   abstract async getOneById (id: number): Promise<any[]>
+
+  protected checkForError (rows: any[]) {
+    if (rows.length < 1) throw Error('No entry found.')
+  }
 }
