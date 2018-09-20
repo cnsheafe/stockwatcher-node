@@ -1,7 +1,9 @@
 CREATE TABLE IF NOT EXISTS Symbols (
   id serial PRIMARY KEY,
   symbol TEXT NOT NULL,
-  company TEXT,
+  company TEXT NOT NULL,
+  sector: TEXT,
+  industry: TEXT,
   createdAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
   updatedAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
