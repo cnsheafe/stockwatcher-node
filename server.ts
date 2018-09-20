@@ -18,6 +18,6 @@ process.on('unhandledRejection', (err) => {
   process.exit(1)
 })
 
-const { SW_API_HOST, SW_API_PORT } = process.env
+const { API_HOST, API_PORT } = process.env
 
-startup(SW_API_HOST, SW_API_PORT)
+startup(API_HOST || 'localhost', API_PORT || 8080)
