@@ -17,6 +17,7 @@ export const findBySymbol = (db: SymbolDb): ServerRoute => ({
 
       return h.response(companies).code(200)
     } catch (error) {
+      // tslint:disable-next-line no-console
       console.log(error)
 
       return h.response(error.message).code(500)
